@@ -7,7 +7,11 @@ body {
   width: 60%;
   margin: auto;
 }
-
+.background_gredient{
+  background: linear-gradient(90deg,#003b59,#5b5b5b,#000000,#670101,#000000,#4e4e4e,#00455b);
+  background-size: 420% 420%;
+  animation: gradient-animation 50s ease infinite;
+}
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
@@ -19,6 +23,8 @@ body {
     background-position: 0% 50%;
   }
 }
+
+
 
 
 .bodyhr {
@@ -68,6 +74,7 @@ body {
   border-radius: 20px 20px 0px 0px;
 }
 
+
 .footerIconDiv{
   max-width: 40px;
 }
@@ -92,7 +99,7 @@ body {
   right: 0;
   height: 6px;
   background: rgb(252, 2, 2);
-  z-index: 10;
+  z-index: 800;
   transform-origin: 0%;
 }
 
@@ -110,7 +117,7 @@ body {
 
 .large_medium_text{
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 900;
   color: #e0e0e0;
 
 }
@@ -122,15 +129,21 @@ body {
 
 .medium_small_text{
   font-size: 1.3rem;
-  color: #e0e0e0;
+  color: #e4e4e4;
   font-weight: 500;
 }
 
 .small_text{
   font-size: 1.1rem;
+  color: #e0e0e0;
 }
 
 .small_small_text{
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.extra_small_text{
   font-size: 0.9rem;
 }
 
@@ -138,6 +151,22 @@ body {
 
 .location{
   margin-top: -5px;
+}
+
+.main_title {
+  padding: 10px 10px;
+  -webkit-text-stroke: 1px  rgb(0, 0, 0);
+  margin-bottom: 0px;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.8); 
+  animation: glow 1.5s infinite alternate; 
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(121, 121, 121, 0.8); 
+  }
 }
 
 /* Profile */
@@ -174,6 +203,150 @@ body {
   padding: 50px 0px 50px 30px;
 }
 
+/* Image  Marquee */
+
+.skills-carousel {
+  overflow: hidden;
+  position: relative;
+  height: 85px; 
+}
+
+
+.skills-carousel img {
+  width: 85px; 
+  height: 85px; 
+  margin-left: 20px;
+}
+
+
+/* experience gredient */
+
+.experience_gradient{
+  background: linear-gradient(90deg, rgba(24,24,24,0.1026611328125) 0%, rgba(184,184,184,0.09705889191614148) 14%, rgba(45,45,45,0.1026611328125) 100%);
+  backdrop-filter: blur(100px);
+}
+
+.experience_gradient_rev{
+  background: linear-gradient(90deg, rgba(24,24,24,0.1026611328125) 0%, rgba(184,184,184,0.09705889191614148) 86%, rgba(45,45,45,0.1026611328125) 100%);
+  backdrop-filter: blur(100px);
+}
+
+.large_margin_left{
+  margin-left: 40px;
+}
+
+.ul{
+  font-size: 1rem;
+  line-height: 98%;
+  color: rgb(109, 109, 109);
+}
+
+.ant-timeline-item-tail {
+  border-left: 2px solid #ffffff;
+}
+
+/* Education */
+.edu_max_width_col{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.edu_max_width_col_rev{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.edu_max_width{
+  display: flex;
+  justify-content: flex-end;
+  max-width: 550px;
+  margin-right: -50px;
+  align-items: center;
+}
+
+.edu_max_width_rev{
+  display: flex;
+  justify-content: flex-start;
+  max-width: 550px;
+  margin-left: -50px;
+  align-items: center;
+}
+
+.edu_max_width_image{
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+.edu_max_width_image:hover{
+  opacity: 1;
+}
+.margin_top{
+  margin-top:"0px"
+}
+
+.card_left{
+  margin-left: -50px;
+}
+
+.card_right{
+  margin-right: -50px;
+}
+
+
+/* GIthub Stats */
+.repo{
+  border: 0px;
+  border-radius: 7px;
+  box-shadow: 0 0px 0px rgba(31, 31, 31, 0.233); 
+  transition: box-shadow 0.3s ease;
+}
+
+.repo:hover{
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.col-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.git_link{
+  color: #757575;
+}
+
+.get_link:hover{
+  color: #eeeeee;
+}
+
+/* Float Meassage */
+
+.floatmessage{
+  position: relative;
+  width: 60%;
+}
+
+.floatmessage .ant-float-button {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  z-index: 500;
+  right: calc((100% - 60%) / 2);  /* This ensures it stays within the 60% width */
+  bottom: 90px; /* Adjust the bottom value as needed */
+  box-shadow: 0 0px 0px rgba(31, 31, 31, 0.233); 
+  transition: box-shadow 0.3s ease-out;
+}
+
+.floatmessage .ant-float-button:hover{
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.custom-label {
+  color: #f3f3f3;
+}
 
 /* Media Query */
 
@@ -193,6 +366,14 @@ body {
   .profile_info_padding{
     padding: 50px 10px 50px 30px;
   }
+  .floatmessage {
+    width: 75%;
+  }
+
+  .floatmessage .ant-float-button {
+    right: calc((100% - 75%) / 2);
+    bottom: 85px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -210,6 +391,15 @@ body {
   .profile_info_padding{
     padding: 50px 10px 50px 30px;
   }
+  .floatmessage {
+    width: 85%;
+  }
+
+  .floatmessage .ant-float-button {
+    right: calc((100% - 85%) / 2);
+    bottom: 85px;
+  }
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -257,10 +447,27 @@ body {
   
   .small_text{
     font-size: 1rem;
+    color: #e0e0e0;
   }
   
   .small_small_text{
     font-size: 0.8rem;
+  }
+  .skills-carousel {
+    height: 75px; 
+  }
+  .skills-carousel img {
+    width: 75px; 
+    height: 75px; 
+    margin-left: 20px;
+  }
+  .floatmessage {
+    width: 90%;
+  }
+
+  .floatmessage .ant-float-button {
+    right: calc((100% - 90%) / 2);
+    bottom: 85px;
   }
 }
 
@@ -291,25 +498,26 @@ body {
   }
   
   .large_medium_text{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: #e0e0e0;
   
   }
   
   .medium_text{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #e0e0e0;
   }
   
   .medium_small_text{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #e0e0e0;
     font-weight: 500;
   }
   
   .small_text{
     font-size: 1rem;
+    color: #e0e0e0;
   }
   
   .small_small_text{
@@ -317,6 +525,59 @@ body {
   }
   .profile_image_div{
     max-width: 350px;
+  }
+  .skills-carousel {
+    height: 70px; 
+  }
+  .skills-carousel img {
+    width: 70px; 
+    height: 70px; 
+    margin-left: 15px;
+  }
+  .large_margin_left{
+    margin-left: 30px;
+  }
+  .edu_max_width_col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .edu_max_width_col_rev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .edu_max_width{
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    align-items: center;
+  }
+  
+  .edu_max_width_rev{
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    align-items: center;
+  }
+  .card_left{
+    margin-left: 0;
+  }
+  
+  .card_right{
+    margin-right: 0px;
+  }
+  .edu_max_width_image{
+    display: none;
+  }
+  .floatmessage {
+    width: 95%;
+  }
+
+  .floatmessage .ant-float-button {
+    right: calc((100% - 95%) / 2);
+    bottom: 80px;
   }
 }
 
@@ -346,25 +607,26 @@ body {
   }
   
   .large_medium_text{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: #e0e0e0;
   
   }
   
   .medium_text{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #e0e0e0;
   }
   
   .medium_small_text{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #e0e0e0;
     font-weight: 500;
   }
   
   .small_text{
     font-size: 1rem;
+    color: #e0e0e0;
   }
   
   .small_small_text{
@@ -373,9 +635,63 @@ body {
   .profile_image_div{
     max-width: 350px;
   }
+  .skills-carousel {
+    height: 65px; 
+  }
+  .skills-carousel img {
+    width: 65px; 
+    height: 65px; 
+    margin-left: 15px;
+  }
+  .large_margin_left{
+    margin-left: 25px;
+  }
+  .edu_max_width_col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .edu_max_width_col_rev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .edu_max_width{
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    align-items: center;
+  }
+  
+  .edu_max_width_rev{
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    align-items: center;
+  }
+  .card_left{
+    margin-left: 0;
+  }
+  
+  .card_right{
+    margin-right: 0px;
+  }
+  .edu_max_width_image{
+    display: none;
+  }
+  .center{
+    text-align: center;
+  }
+  .floatmessage {
+    width: 95%;
+  }
+
+  .floatmessage .ant-float-button {
+      right: calc((100% - 95%) / 2);
+      bottom: 80px;
+  }
 }
-
-
 
 
 
