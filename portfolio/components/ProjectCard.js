@@ -4,7 +4,7 @@ import { Card, Row, Col, Image } from 'antd';
 
 const CardComponent = ({id, imageUrl, title, liveLink, githubLink, description }) => {
     return (
-        <Card key={id} hoverable={true}>
+        <Card key={id} style={{ border:"none"}} className='background_gredient'>
             <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                 <Row gutter={[20, 15]} style={{ display: "flex", alignItems: "center" }}>
                     <Col xs={24} sm={24} md={24} lg={24} xl={14} xxl={14}>
@@ -29,10 +29,10 @@ const CardComponent = ({id, imageUrl, title, liveLink, githubLink, description }
             </Col>
             <Col style={{ marginTop: "10px" }}>
                 <details>
-                    <summary style={{ cursor: "pointer" }}>Description</summary>
+                    <summary style={{ cursor: "pointer", color:"white" }}>Description</summary>
                     <ul>
                         {description.map((desc, index) => (
-                            <li key={index}>{desc}</li>
+                            <li style={{color:"white"}} key={index}>{desc}</li>
                         ))}
                     </ul>
                 </details>

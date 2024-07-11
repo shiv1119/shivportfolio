@@ -69,6 +69,19 @@ const Projects = () =>{
                 "I'm description 4",
             ],
         },
+        {
+            id: 5,
+            imageUrl: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+            title: 'Blogging Website',
+            liveLink: 'https://live-link.com',
+            githubLink: 'https://github.com/link',
+            description: [
+                "I'm description 1",
+                "I'm description 2",
+                "I'm description 3",
+                "I'm description 4",
+            ],
+        },
     ];
 
     return(

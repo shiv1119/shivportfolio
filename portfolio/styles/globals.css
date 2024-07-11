@@ -154,7 +154,7 @@ body {
 }
 
 .main_title {
-  padding: 10px 10px;
+  padding: 20px 10px;
   -webkit-text-stroke: 1px  rgb(0, 0, 0);
   margin-bottom: 0px;
   text-shadow: 0 0 10px rgba(255, 0, 0, 0.8); 
