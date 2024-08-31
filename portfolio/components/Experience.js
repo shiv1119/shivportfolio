@@ -58,7 +58,7 @@ const Experience = () => {
                         children: <>
                         <Row style={{ padding: "15px 10px", display:"flex", flexDirection:"row", gap:"10px"}} className='experience_gradient'>
                             <Col>
-                            <Image lazyload = "true" preview={false}  width={60}style={{border:"1px solid white", borderRadius:"50%", background:"rgb(0, 78, 88)"}} src="./images/alliancelogo.png" />
+                            <Image preview={false}  width={60}style={{border:"1px solid white", borderRadius:"50%", background:"rgb(0, 78, 88)"}} src="./images/alliancelogo.png" />
                             </Col>
                             <Col>
                                 <div className="medium_text" style={{lineHeight:"1.2rem"}}>Self Employed</div>
@@ -86,7 +86,7 @@ const Experience = () => {
                         children: <>
                         <Row style={{ padding: "15px 10px", display:"flex", flexDirection:"row-reverse", gap:"10px"}} className='experience_gradient_rev'>
                             <Col>
-                                <Image lazyload = "true" preview={false}  width={60} style={{border:"1px solid white", borderRadius:"50%", background:"rgb(0, 78, 88)"}} src="./images/internpixel.jpeg" />
+                                <Image preview={false}  width={60} style={{border:"1px solid white", borderRadius:"50%", background:"rgb(0, 78, 88)"}} src="./images/internpixel.jpeg" />
                             </Col>
                             <Col>
                                 <div className="medium_text" style={{lineHeight:"1.2rem"}}>Front-end Developer Intern</div>

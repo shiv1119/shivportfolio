@@ -14,7 +14,7 @@ const FooterIcon = ({ src, title, width = 50}) => {
               justifyContent:"center",
               alignItems:"center",
               borderRadius: '4px', }}>
-        <Image preview={false} src={src} alt={title} className="footerIcon" />
+        <Image preview={false} src={src} alt={title} className="footerIcon white" />
       </Tooltip>
     </div>
   );

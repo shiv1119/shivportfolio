@@ -15,7 +15,7 @@ const FloatMessage = () =>{
     <div>
         <div className='floatmessage'>
             <div><a onClick={() => scrollToSection('contacts')}>
-                    <FloatButton className='ant-float-button' icon={< MessageOutlined />} />
+                    <FloatButton className='ant-float-button'  icon={< MessageOutlined />} />
                 </a>
             </div>
         </div>

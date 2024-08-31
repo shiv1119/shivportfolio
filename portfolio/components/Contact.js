@@ -30,7 +30,7 @@ const Contacts = ({ onClose }) => {
       <Row>
         <Col xs={24} sm={24} md={24} lg={24} xl={24} xxl={24}>
             <div style={{fontWeight:"bold", textAlign:"center"}} className="large_medium_text main_title">Contact Me</div>
-            <Card className='experience_gradient' style={{ border:"none", padding:"30px"}} >
+            <Card style={{ border:"none", padding:"30px", background:"none", backdropFilter:"blur(1000px)", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"}} >
             <Row gutter={20} style={{marginTop:"5px"}}>
                 <Col xs={24} sm={24} md={12} lg={12} xl={12} > 
                     <Form.Item 

@@ -15,6 +15,7 @@ import Repo from '@/components/Repo';
 import Projects from '@/components/Projects';
 import FloatMessage from '@/components/FloatMessage';
 import Contacts from '@/components/Contact';
+import Certificates from '@/components/Certificates';
 
 export default function Home() {
   return (
@@ -32,11 +33,13 @@ export default function Home() {
       {/* <Hr /> */}
       <Experience />
       <Education />
+      <Certificates />
       <GitHubStats />
       <Repo />
       <Projects />
       <FloatMessage />
       <Contacts />
+
     </main>
   );
 }
